@@ -1,0 +1,3 @@
+questo è il contenuto del terzo file
+contenuto aggiunto in esecuzione
+questo è il contenuto del primo file

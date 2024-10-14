@@ -1,0 +1,41 @@
+Gli script sono identificati dalla shebang #!, la prima riga del file,
+dove viene indicato di seguito il percorso della bash shell. Per trovare
+il percorso del bash, eseguiamo il comando which bash.
+
+Bisogna sempre verificare di avere i permessi prima di lanciare uno script.
+Nel caso non li avessimo, basta usare il comando chmod u+x nome_script.
+
+Inoltre i file di tipo script vengono visualizzati con un colore diverso,
+in questo caso con il colore verde. Per eseguire il file possiamo fare in 2 modi:
+./nome_script oppure bash nome_script.
+
+Esempio di un file script:
+#! /usr/bin/bash
+#shebang (bash + bang) dice alla shell di eseguirla via bash
+
+echo "Hello world"
+a=12
+b=3
+sum=$(($a+$b))
+echo "La variabile A vale: " $a
+echo "La variabile B bale: " $b
+echo "La somma di A con B vale:" $sum
+
+$ echo "scale=3; 10/3" | bc
+Comando necessario per poter ottenere le cifre decimali.
+
+Operatori logici:
+Uguaglianza       a -eq b
+Maggiore o ugale  a -ge b
+Maggiore          a -gt b
+Minore o uguale   a -le b
+Minore            a -lt b
+Disuguagliaza     a -ne b
+
+if [conditions]
+    then
+        command
+elif [conditions]
+    then
+        commands
+fi
